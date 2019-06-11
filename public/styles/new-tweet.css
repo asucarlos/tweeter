@@ -1,0 +1,29 @@
+textarea {
+  height: 20px;
+  padding: 2em;
+  width: 400px;
+}
+
+.new-tweet{
+  background-color: #eee;
+  width: 500px;
+  height: 10rem;
+  margin: 2em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+h2{
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
+
+form{
+  margin: auto;
+  padding:0 20px;
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+}
