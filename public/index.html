@@ -16,6 +16,9 @@
     <!-- nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
+    <!-- news feed -->
+     <link rel="stylesheet" href="/styles/newsfeed.css" type="text/css">
+
      <!-- new tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
@@ -26,7 +29,6 @@
     <script type="text/javascript" src="/scripts/app.js"></script>
      <!-- character -->
      <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
 
   </head>
 
@@ -49,16 +51,17 @@
             </div>
           </form>
       </section>
-      <section class="tweet container">
-        <article>
-          <header>
-            <img src="https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_50.png">
+
+      <section class="news-feed">
+        <article class="news-post">
+          <header class = "news-post-header">
+            <img src="https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_50.png" class="user-icon">
             <h2 class=tweet-user-name>Bill Fields</h2>
             <span class="tweet-account-name">@MrFields</span>
           </header>
-          <h3>Little tweet here</h3>
-          <footer>
-            <p>10days ago</p>
+          <p class="news-post-text">Little tweet here</p>
+          <footer class="news-post-footer">
+            <span>10days ago</span>
           </footer>
         </article>
       </section>

@@ -1,0 +1,43 @@
+.news-post{
+  width: 500px;
+  height: 14rem;
+  margin: 2em;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-post-header{
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.news-post-header img {
+  width: 15%;
+  height:auto;
+  padding: 0.5em
+
+}
+.news-post-header h2 {
+  width: 70%;
+  height:auto;
+
+}.news-post-header span {
+  width: 15%;
+  height:auto;
+}
+
+
+.news-post-text {
+  padding: 0 1em 0 1em;
+  height:50%;
+}
+
+.news-post-footer {
+  border-top: 0.5px solid black;
+  height:15%;
+
+}
