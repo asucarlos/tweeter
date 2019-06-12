@@ -1,8 +1,15 @@
+.hover-border{
+  border: 1px solid #000000;
+}
+
+.hover{
+  opacity: 1;
+}
 .news-post{
   width: 500px;
   height: 14rem;
   margin: 2em;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -13,9 +20,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  opacity: 0.5;
+
 }
 
 .news-post-header img {
+  opacity: 70%;
   width: 15%;
   height:auto;
   padding: 0.5em
@@ -39,5 +49,36 @@
 .news-post-footer {
   border-top: 0.5px solid black;
   height:15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
 }
+
+.news-post-footer span{
+  width:85%;
+  padding:0.5em;
+}
+
+.news-post-footer .icons{
+  width:15%;
+  opacity: 0;
+}
+
+.news-post-footer .icon-heart{
+  margin:3px;
+  width:1em;
+  height:auto;
+}
+
+.news-post-footer .icon-retweet{
+  margin:3px;
+  width:1em;
+  height:auto;
+}
+.news-post-footer .icon-flag{
+  margin:3px;
+  width:1em;
+  height:auto;
+}
+
