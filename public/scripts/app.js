@@ -20,14 +20,32 @@ const tweetData = {
   "created_at": 1461116232227
 }
 
-function createTweetElement(){
-  var $name = $("")
 
+function createTweetElement(){
+  var newTweet =`
+    <article class="news-post">
+    <header class = "news-post-header">
+      <img src="${tweetData.user.avatars.small}" class="user-icon">
+      <h2 class=tweet-user-name>${tweetData.user.name}</h2>
+      <span class="tweet-account-name">${tweetData.user.handle}</span>
+    </header>
+    <p class="news-post-text">${tweetData.content.text}</p>
+    <footer class="news-post-footer">
+      <span>10 days ago</span>
+      <img src="/icons/heart.png" class="icons icon-heart">
+      <img src="/icons/retweet.png" class="icons icon-retweet">
+      <img src="/icons/flag.png" class="icons icon-flag">
+    </footer>
+    </article>
+    `
+return newTweet
 }
 
-
+$(document).ready(function (){
 var $tweet = createTweetElement(tweetData);
 
 // Test / driver code (temporary)
-console.log($tweet); // to see what it looks like
-$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+// console.log($tweet); // to see what it looks like
+$('.news-feed').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+
+})
