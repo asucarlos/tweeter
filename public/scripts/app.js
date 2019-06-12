@@ -51,7 +51,6 @@ const data =[
     "created_at": 1461113796368
   }
 ];
-
 // render the tweets to the timeline
 function renderTweets(tweets) {
   for(let i = 0; i < tweets.length; i++){
@@ -81,8 +80,20 @@ function createTweetElement(tweet) {
   return newTweet
 }
 
+//load tweets to
+  function loadTweet(){
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+      dataType: 'JSON',
+      success: function (data) {
+        renderTweets(data);
+      }
+    })
+  };
 $(document).ready(function (){
 renderTweets(data);
+loadTweet();
 
 // Test / driver code (temporary)
 // console.log($tweet); // to see what it looks like
