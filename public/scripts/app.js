@@ -85,6 +85,7 @@ function createTweetElement(tweet) {
     $(".news-feed").empty();
     loadTweet();
     $('#new-post').val("");
+    $('.counter').html('0')
   })
   .error( function(req, error){
    alert('error');
