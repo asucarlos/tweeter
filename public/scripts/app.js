@@ -68,7 +68,7 @@ function createTweetElement(tweet) {
       <h2 class=tweet-user-name>${tweet.user.name}</h2>
       <span class="tweet-account-name">${tweet.user.handle}</span>
     </header>
-    <p class="news-post-text">${tweet.content.text}</p>
+    <p class="news-post-text">${escape(tweet.content.text)}</p>
     <footer class="news-post-footer">
       <span>10 days ago</span>
       <img src="/icons/heart.png" class="icons icon-heart">
@@ -91,6 +91,13 @@ function createTweetElement(tweet) {
       }
     })
   };
+
+//to prevent untrusted text
+  function escape(str){
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
 
   $(function() {
   var $button = $('div input');
