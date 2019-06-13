@@ -30,7 +30,7 @@
      <!-- character -->
      <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
      <!-- hover -->
-     <script type="text/javascript" src="/scripts/hover.js"></script>
+     <script type="text/javascript" src="/scripts/css-effect.js"></script>
      <!-- App JS -->
     <script type="text/javascript" src="/scripts/new-tweet.js"></script>
 
@@ -42,6 +42,10 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+
+      <button type ="submit" value="Compose" class="compose-button">
+        <img src="/icons/compose.png">Compose
+      </button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -49,7 +53,7 @@
       <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <div class="alert">
-            <span class="new-tweet-error">Error Message</span>
+            <span class="new-tweet-error"></span>
           </div>
           <label class="error-message"></label>
           <form class="post-tweet">

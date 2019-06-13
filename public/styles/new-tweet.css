@@ -7,11 +7,11 @@
   border-radius: 10px;
 }
 
-.alert {
+.alert{
   padding: 0.3rem 1rem;
   background-color: #f44336; /* Red */
   color: white;
-  opacity: 0;
+  display: none;
 }
 
 .new-tweet textarea {

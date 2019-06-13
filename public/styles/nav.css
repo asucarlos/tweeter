@@ -21,3 +21,26 @@
   transform: translateY(-50%);
   float: left;
 }
+
+#nav-bar .compose-button{
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  float: right;
+  padding: 1rem;
+  background-color: #E7FDFE;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  color: #00a087;
+}
+
+#nav-bar .compose-button:hover{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+#nav-bar img{
+  width: 1rem;
+  height: auto;
+}
+
