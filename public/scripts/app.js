@@ -109,9 +109,11 @@ function createTweetElement(tweet) {
     const $data = $form.serialize();
 
   if(!$text.length) {
-    alert('no text');
+    $('.alert').hide();
+    $('.alert').append('No text typed!').slideDown('fast');
   } else if($text.length > 140){
-    alert('reduce text');
+    $('.alert').hide();
+    $('.alert').append('Cannot type more than 140!').slideDown('fast');
   } else {
   $.ajax({
     url: '/tweets',
@@ -119,6 +121,7 @@ function createTweetElement(tweet) {
     data: $data
   })
   .done( function(res){
+    $('.alert').hide();
     $(".news-feed").empty();
     loadTweet();
     $('#new-post').val("");

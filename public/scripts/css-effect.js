@@ -1,3 +1,5 @@
+
+// hover effect on new-tweet
 $(document).ready(function() {
   $(".news-post").hover(function () {
     $(this).css("border", "1px solid black");
@@ -10,4 +12,10 @@ $(document).ready(function() {
       $(this).children(".news-post-header").css("opacity", "0.5");
       $(this).children(".news-post-footer").children(".icons").css("opacity", "0");
       })
+
+//error on new-tweet
+  // $('')
+
 })
+
+
