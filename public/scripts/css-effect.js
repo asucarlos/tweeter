@@ -1,6 +1,6 @@
 
-// hover effect on new-tweet
 $(document).ready(function() {
+  // hover effect on new-tweet
   $(".news-post").hover(function () {
     $(this).css("border", "1px solid black");
     $(this).children(".news-post-header").css("opacity", "1");
@@ -13,8 +13,10 @@ $(document).ready(function() {
       $(this).children(".news-post-footer").children(".icons").css("opacity", "0");
       })
 
-//error on new-tweet
-  // $('')
+  $(".compose-button").on("click", () => {
+    $('main .new-tweet').toggle('slow');
+    $('#new-post').select();
+  })
 
 })
 
