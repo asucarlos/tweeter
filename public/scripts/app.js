@@ -18,6 +18,7 @@ function renderTweets(tweets) {
 
 // take  data and pass to the structure, append to html
 function createTweetElement(tweet) {
+  var tweet_text = $("<div>").text(tweet_text)
   var newTweet =`
     <article class="news-post">
     <header class = "news-post-header">
