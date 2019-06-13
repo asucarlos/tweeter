@@ -80,23 +80,47 @@ function createTweetElement(tweet) {
   return newTweet
 }
 
-//load tweets to
+//load tweets from /tweets and render to tweets
   function loadTweet(){
     $.ajax({
       url: '/tweets',
       method: 'GET',
       dataType: 'JSON',
       success: function (data) {
-        renderTweets(data);
+      renderTweets(data);
       }
     })
   };
-$(document).ready(function (){
-renderTweets(data);
-loadTweet();
 
-// Test / driver code (temporary)
-// console.log($tweet); // to see what it looks like
-// $('.news-feed').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  $(function() {
+  var $button = $('div input');
+  var $form = $('.post-tweet');
 
-})
+  $('form').submit(function (e) {
+    var $text = $('#new-post').val();
+    e.preventDefault();
+    const $data = $form.serialize();
+
+  if(!$text.length) {
+    alert('no text');
+  } else if($text.length > 140){
+    alert('reduce text');
+  } else {
+  $.ajax({
+    url: '/tweets',
+    method: 'POST',
+    data: $data
+  })
+  .done( function(res){
+    $(".news-feed").empty();
+    loadTweet();
+    $('#new-post').val("");
+  })
+  .error( function(req, error){
+   alert('error');
+    })
+  }
+  });
+
+  loadTweet();
+  })

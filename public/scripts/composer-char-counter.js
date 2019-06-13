@@ -1,5 +1,4 @@
-
-$(document).ready(function() {
+$(function() {
 var count = 0;
 $(".new-tweet textarea").on("input", function() {
   var $text = $(".new-tweet textarea").val();
