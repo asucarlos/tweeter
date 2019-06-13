@@ -1,16 +1,24 @@
 .new-tweet{
   background-color: #eee;
   width: 500px;
-  height: 10rem;
+  height: 12rem;
   margin: 2em;
   border: 1px solid black;
   border-radius: 10px;
+}
+
+.alert {
+  padding: 0.3rem 1rem;
+  background-color: #f44336; /* Red */
+  color: white;
+  opacity: 0;
 }
 
 .new-tweet textarea {
   height: 20px;
   padding: 2em;
   width: 400px;
+  margin: 0.3em;
 }
 
 .new-tweet h2 {
@@ -26,4 +34,11 @@
 .new-tweet-buttons{
   display: flex;
   justify-content: space-between;
+}
+
+.new-tweet-buttons input{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.5em;
 }
