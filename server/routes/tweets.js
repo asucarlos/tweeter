@@ -1,11 +1,13 @@
-"use strict";
+// "use strict";
 
 const userHelper    = require("../lib/util/user-helper")
 
 const express       = require('express');
 const tweetsRoutes  = express.Router();
 
-module.exports = function(DataHelpers) {
+const someFunction = (req, res) => {}
+
+module.exports = function (DataHelpers) {
 
   tweetsRoutes.get("/", function(req, res) {
     DataHelpers.getTweets((err, tweets) => {
@@ -44,3 +46,4 @@ module.exports = function(DataHelpers) {
   return tweetsRoutes;
 
 }
+
