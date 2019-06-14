@@ -12,7 +12,7 @@ const data =[];
 function renderTweets(tweets) {
   for(let i = 0; i < tweets.length; i++){
     var $tweet = createTweetElement(tweets[i]);
-    $('.news-feed').append($tweet);
+    $('.news-feed').prepend($tweet);
   }
 }
 
