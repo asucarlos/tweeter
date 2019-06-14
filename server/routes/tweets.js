@@ -4,6 +4,12 @@ const userHelper    = require("../lib/util/user-helper")
 
 const express       = require('express');
 const tweetsRoutes  = express.Router();
+const userRoutes = express.Router();
+
+// module.exports = funtion(UserHelper) {
+//   userRoutes.post("/", )
+// }
+
 
 module.exports = function (DataHelpers) {
   //convert tweets to a json file and returns
@@ -46,4 +52,8 @@ module.exports = function (DataHelpers) {
   return tweetsRoutes;
 
 }
+
+// const tweetsRouts = express.Routes()
+// tweetRoutes.get()
+// tweetRoutes.post()
 
