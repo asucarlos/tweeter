@@ -6,7 +6,7 @@ $(".new-tweet textarea").on("input", function() {
     $($(this).siblings().children('.counter')).html("-" + ($text.length - 140));
     $($(this).siblings().children('.counter')).css("color", "red");
   } else {
-    $(this).siblings().children('.counter').html($text.length);
+    $(this).siblings().children('.counter').html(140 - $text.length);
     $(this).siblings().children('.counter').css("color", "#000000");
   }
 });

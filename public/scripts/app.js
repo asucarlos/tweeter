@@ -11,7 +11,9 @@ function renderTweets(tweets) {
 
 // take  data and pass to the structure, append to html
 function createTweetElement(tweet) {
-  var tweet_text = $("<div>").text(tweet_text)
+  var tweet_text = $("<div>").text(tweet_text);
+  var date = tweet.created_at;
+  console.log(date)
   var newTweet =`
     <article class="news-post">
     <header class = "news-post-header">
@@ -21,7 +23,7 @@ function createTweetElement(tweet) {
     </header>
     <p class="news-post-text">${escape(tweet.content.text)}</p>
     <footer class="news-post-footer">
-      <span>10 days ago</span>
+      <span>${date} days ago</span>
       <img src="/icons/heart.png" class="icons icon-heart">
       <img src="/icons/retweet.png" class="icons icon-retweet">
       <img src="/icons/flag.png" class="icons icon-flag">
@@ -79,7 +81,7 @@ function createTweetElement(tweet) {
     $(".news-feed").empty();
     loadTweet();
     $('#new-post').val("");
-    $('.counter').html('0')
+    $('.counter').html('140')
   })
   .error( function(req, error){
    alert('error');
