@@ -11,20 +11,11 @@ html {
   box-sizing: inherit;
 }
 
-
-/*
- * Global layout stuff
- */
-
 body {
   color: #244751;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
 .container{
   height:100%;
