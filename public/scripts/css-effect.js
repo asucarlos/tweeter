@@ -13,6 +13,7 @@ $(document).ready(function() {
       $(this).children(".news-post-footer").children(".icons").css("opacity", "0");
       })
 
+//"Compose Tweet" appears when compose button is pressed
   $(".compose-button").on("click", () => {
     $('main .new-tweet').toggle('slow');
     $('#new-post').select();
