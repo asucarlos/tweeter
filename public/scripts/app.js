@@ -1,4 +1,11 @@
-//tweet database
+/*
+ * Client-side JS logic goes here
+ * jQuery is already loaded
+ * Reminder: Use (and do all your DOM work in) jQuery's document ready function
+ */
+// Test / driver code (temporary). Eventually will get this from the server.
+
+//temporary tweet database
 const data =[];
 
 // render the tweets to the timeline
