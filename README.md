@@ -20,5 +20,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 
 ## Final Product
-![createURLimage](/screenshots/home.png)
-![createURLimage](/screenshots/compose.png)
+![createURLimage](/docs/home.png)
+![createURLimage](/docs/compose.png)
+![createURLimage](/docs/tweet-box.png)
+
