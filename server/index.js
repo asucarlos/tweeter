@@ -16,6 +16,7 @@ const MONGODB_URI = "mongodb://localhost:27017/tweeter";
 
 // connect to mongo and take tweet data using helper functions,
 // pass it to "/tweets"
+
 MongoClient.connect(MONGODB_URI, (err, db) => {
   if (err) {
     console.error(`Failed to connect: ${MONGODB_URI}`);
@@ -29,6 +30,8 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 
   app.use("/tweets", tweetsRoutes);
+  // app.use("/user", userRoutes);
+  // app.use("/fun", funRoutes)
 
   app.listen(PORT, () => {
     console.log("Example app listening on port " + PORT);

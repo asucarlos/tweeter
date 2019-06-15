@@ -22,3 +22,15 @@ module.exports = function makeDataHelpers(db) {
 
   };
 }
+
+
+// function UserHelper(db) {
+//   return {
+//     saveUser: function() {
+//       db.saveuser()
+//     },
+//     getUser: function() {
+//       db.getUsers()
+//     }
+//   }
+// }
