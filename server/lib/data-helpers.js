@@ -16,7 +16,7 @@ module.exports = function makeDataHelpers(db) {
       if (err) {
         return callback(err);
       }
-      callback(null, tweets);
+      return callback(null, tweets);
      });
     }
 

@@ -1,0 +1,27 @@
+body {
+  font: 100% "Roboto Condensed", sans-serif;
+  color: #244751;
+  margin: 0;
+  background-image: url(../images/background.jpg);
+  opacity: 0.8;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  height: 100%;
+  width: 560px;
+  margin: auto;
+  padding-top: 150px;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=main.css.map */

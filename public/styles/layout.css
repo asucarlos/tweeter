@@ -1,29 +1,21 @@
 /*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
+- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+- * https://css-tricks.com/international-box-sizing-awareness-day/
+- * Do not modify these two selectors, please
+- */
 html {
-  box-sizing: border-box;
-  background-color: #eee;
-}
+      box-sizing: border-box;
+      background-color: #eee;
+    }
+
 *, *:before, *:after {
-  box-sizing: inherit;
-}
-
+      box-sizing: inherit;
+    }
+    
 body {
-  color: #244751;
-  font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
-}
-
-
-.container{
-  height:100%;
-  width: 560px;
-  margin:auto;
-  padding-top: 150px;
-  background-color: #FFFFFF;
-}
-
+      color: #244751;
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+    }
+    
 
