@@ -1,7 +1,8 @@
 "use strict";
 
 // Basic express and mongodb setup
-const PORT          = 8080;
+const PORT          = process.env.PORT
+// const PORT          = 8080;
 const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
