@@ -6,8 +6,8 @@
   border: 1px solid black;
   border-radius: 10px;
   display:none;
+  opacity: 1;
 }
-
 
 .alert{
   padding: 0.3rem 1rem;

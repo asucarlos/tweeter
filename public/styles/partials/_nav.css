@@ -7,23 +7,20 @@
   padding: 0 2rem;
   z-index: 1;
 }
-
 #nav-bar .logo {
   height: 80px;
   width: 80px;
   margin: 0 10px 0 0;
   float: left;
 }
-
-#nav-bar .header{
+#nav-bar .header {
   font-size: 2rem;
   top: 50%;
   position: relative;
   transform: translateY(-50%);
   float: left;
 }
-
-#nav-bar .compose-button{
+#nav-bar .compose-button {
   top: 50%;
   position: relative;
   transform: translateY(-50%);
@@ -34,14 +31,13 @@
   border: 1px solid #000000;
   color: #00a087;
 }
-
-#nav-bar .compose-button:hover{
+#nav-bar .compose-button:hover {
   background-color: #FFFFFF;
   color: #000000;
 }
-
-#nav-bar img{
+#nav-bar img {
   width: 1rem;
   height: auto;
 }
 
+/*# sourceMappingURL=nav.css.map */
