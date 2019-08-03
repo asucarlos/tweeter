@@ -7,12 +7,15 @@ const bodyParser    = require("body-parser");
 const app           = express();
 const MongoClient = require("mongodb").MongoClient;
 
+require('dotenv').config();
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+const MONGODB_URI = process.env.MONGODB_URI;
 
-const MONGODB_URI = "mongodb://localhost:27017/tweeter";
+// const MONGODB_URI = "mongodb://localhost:27017/tweeter";
 
 // connect to mongo and take tweet data using helper functions,
 // pass it to "/tweets"
