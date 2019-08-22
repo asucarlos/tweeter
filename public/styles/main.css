@@ -16,12 +16,12 @@ html {
 }
 
 .container {
-  height: 100%;
+  height: 100vh;
   width: 560px;
   margin: auto;
   padding-top: 150px;
   background-color: #FFFFFF;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

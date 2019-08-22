@@ -1,15 +1,13 @@
 "use strict";
 
 // Basic express and mongodb setup
-const PORT          = process.env.PORT
-// const PORT          = 8080;
+const PORT          = process.env.PORT || 5000
 const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
 const MongoClient = require("mongodb").MongoClient;
 
 require('dotenv').config();
-
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
